@@ -1,0 +1,114 @@
+/* General Styles */
+.admin-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+  }
+  
+  .admin-page h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .admin-page h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  /* Table Styles */
+  .admin-page table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-page th,
+  .admin-page td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .admin-page th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .admin-page td {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-page tr:nth-child(even) td {
+    background-color: #f1f1f1;
+  }
+  
+  .admin-page tr:hover td {
+    background-color: #eaeaea;
+  }
+  
+  /* Select & Button Styles */
+  .admin-page select,
+  .admin-page textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  .admin-page button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .admin-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .admin-page textarea {
+    resize: vertical;
+  }
+  
+  /* Button Disabled State */
+  .admin-page button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Table Cell Styles for Status/Action */
+  .admin-page .status-action-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .admin-page .status-action-cell select,
+  .admin-page .status-action-cell button {
+    width: 100%;
+  }
+  
+  .admin-page .ticket-action-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .admin-page .ticket-action-cell button {
+    width: 100%;
+  }
+  
+  

@@ -1,0 +1,110 @@
+Styling for the table container
+.table-container {
+  width: 100vw; 
+  height: 100vh; 
+  overflow: auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  box-sizing: border-box;
+}
+
+
+.past-transactions-table {
+  width: 90%; 
+  height: 90%; 
+  border-collapse: collapse;
+  /* table-layout: fixed;  */
+  background-color: white;
+}
+
+
+.past-transactions-table th {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+
+.past-transactions-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis;  */
+  /* white-space: nowrap;  */
+}
+
+.past-transactions-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+.past-transactions-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+/* For the fade-out animation */
+.fade-out {
+  animation: fadeOut 3s forwards;
+}
+
+/* Keyframe for fade-out effect */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Loading screen animation */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);  /* Light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Fade-out for loading screen */
+}
+
+/* Car Image */
+.loading-screen img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Loading Bar */
+.loading-bar-container {
+  width: 80%;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+}
+
+.loading-bar {
+  height: 10px;
+  width: 0%;
+  background-color: green;
+  animation: loadBar 3s linear forwards;
+}
+
+@keyframes loadBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
